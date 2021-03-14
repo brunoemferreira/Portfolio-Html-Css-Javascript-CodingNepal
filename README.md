@@ -1,5 +1,11 @@
 <h1 align="center"> Portfólio Responsivo em HTML/CSS/JavaScript - CodingNepal </h1>
 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/brunoemferreira/Portfolio-Html-Css-Javascript-CodingNepal?color=%2304D361">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/brunoemferreira/Portfolio-Html-Css-Javascript-CodingNepal">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brunoemferreira/Portfolio-Html-Css-Javascript-CodingNepal">
+</p>
+
 ## 🚀 Sobre o Projeto
 Clone desenvolvido utilizando como modelo Portfolio da CodingNepal, onde no mesmo é possível navegar entre as páginas Home, About, Services, Skills, Teams e Contacts rolando somente a barra lateral, projeto responsivo. 
 

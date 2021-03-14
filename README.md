@@ -1,4 +1,4 @@
-# Portfólio Responsivo em HTML/CSS/JavaScript - CodingNepal
+<h1 align="center"> Portfólio Responsivo em HTML/CSS/JavaScript - CodingNepal </h1>
 
 ## 🚀 Sobre o Projeto
 Clone desenvolvido utilizando como modelo Portfolio da CodingNepal, onde no mesmo é possível navegar entre as páginas Home, About, Services, Skills, Teams e Contacts rolando somente a barra lateral, projeto responsivo. 

@@ -136,6 +136,19 @@
 }
 
 /* All similar content styling code */
+.about, 
+.services, 
+.skills{
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 section {
   padding: 100px 0;
 }
@@ -171,18 +184,8 @@ section .title::after{
 
 
 /* Estilizando a About Section */
-.about, .services{
-  font-family: 'Poppins', sans-serif;
-}
 .about .title::after{
   content: "who is i am";
-}
-.about .about-content, 
-.services .serv-content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 .about .about-content .left{
   width: 45%;
@@ -239,9 +242,56 @@ section .title::after{
 
 .services .serv-content .card{
   width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+  background: var(--crinson-color);
+}
+.services .serv-content .card .box{
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card .fa-paint-brush,
+.services .serv-content .card .fa-chart-line,
+.services .serv-content .card .fa-code {
+  font-size: 50px;
+  color: crimson;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .fa-paint-brush,
+.services .serv-content .card:hover .fa-chart-line,
+.services .serv-content .card:hover .fa-code {
+  color: var(--white-color);
+}
+.services .serv-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
 
-
+/* Estilizando as Skills Section */
+.skills .title::before{
+  background: var(--white-color);
+}
+.skills .title::after{
+  background: #111;
+  content: "what i know";
+}
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
 /* Responsive media query start */
 @media(max-width: 1300px){
@@ -318,6 +368,10 @@ section .title::after{
   .about .about-content .right {
     flex: 100%;
   }
+  .services .serv-content .card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 
 @media(max-width: 690px){
@@ -332,6 +386,9 @@ section .title::after{
   }
   .home .home-content a{ 
     font-size: 20px;
+  }
+  .services .serv-content .card{
+    width:100%;
   }
 }
 
